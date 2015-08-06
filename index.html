@@ -18,15 +18,21 @@
 
 		$(document).ready(function() {
 
-			$(".tab_content").hide();
-			$(".tab_content:first").show(); 
+		$(".tab_content").hide();
+		$(".tab_content:first").show(); 
 
-			$(".tabs").click(function() {
+		$(".tabs").click(function() {
+                if ($(this).hasClass("active")==true){
+                    	$(".tab_content").hide();
+                    	$(".tabs").removeClass("active");
+                }
+                else{
 			$(".tabs").removeClass("active");
 			$(this).addClass("active");
 			$(".tab_content").hide();
 			var activeTab = $(this).attr("rel"); 
 			$("#"+activeTab).fadeIn(); 
+                }
 		});
 		});
 
