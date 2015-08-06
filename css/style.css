@@ -72,9 +72,10 @@ body{
 	border-style: solid;
 	border-width: 2px;
 	padding-top: 10px;
+	padding-left: 10px;
 	margin-bottom: 20px;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 }
 .frontpage-category-container-small.active{
 	background-color: gray;
@@ -84,6 +85,10 @@ body{
 .frontpage-category-container-small:hover{
 	background-color: #D6D6D6;
 }
+.frontpage-category-container-small .fa-caret-right{
+	position:absolute;
+	left: 25px;
+}
 .frontpage-category-container-small .fa-caret-down{
 	display: none;
 }
@@ -92,6 +97,13 @@ body{
 }
 .frontpage-category-container-small.active .fa-caret-down{
 	display: inline;
+	position:absolute;
+	left:25px;
+}
+.frontpage-category-container-small .category-icon{
+	dispalY: inline;
+	position: absolute;
+	right: 20px;
 }
 .frontpage-category-container .fa{
 	font-size: 3em;
@@ -112,6 +124,10 @@ body{
     height: 0;
     line-height: 0;
     visibility: hidden;
+}
+.tab-title{
+	position: relative;
+	bottom: 5px;
 }
 
 
