@@ -10,6 +10,27 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 			<!-- Main Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+		</script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$(".tab_content").hide();
+			$(".tab_content:first").show(); 
+
+			$(".tabs").click(function() {
+			$(".tabs").removeClass("active");
+			$(this).addClass("active");
+			$(".tab_content").hide();
+			var activeTab = $(this).attr("rel"); 
+			$("#"+activeTab).fadeIn(); 
+		});
+		});
+
+		</script> 
 	</head>
 	<body>
 		<div class="nav-bar">
@@ -23,19 +44,19 @@
 			<h1 class="page-title">Ethical Asian Eateries</h1>
 				<div class="row">	
 					<div class="col-sm-4">
-						<div class="frontpage-category-container">
+						<div class="frontpage-category-container tabs active" rel="tab1">
 							<h2>Feminism</h2>
 							<i class="fa fa-venus"></i>
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div class="frontpage-category-container">
+						<div class="frontpage-category-container tabs" rel="tab2">
 							<h2>Veganism</h2>
 							<i class="fa fa-leaf"></i>
 						</div>	
 					</div>
 					<div class="col-sm-4">
-						<div class="frontpage-category-container">	
+						<div class="frontpage-category-container tabs" rel="tab3">	
 							<h2>Sushi</h2>
 							<i class="fa fa-cutlery"></i>
 						</div>	
