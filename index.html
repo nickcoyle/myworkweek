@@ -22,7 +22,7 @@
 		$(".tab_content:first").show(); 
 
 		$(".tabs").click(function() {
-                if ($(this).hasClass("active")==true){
+                if ($(this).hasClass("active")==true && $(this).hasClass("frontpage-category-container-small")==true){
                     	$(".tab_content").hide();
                     	$(".tabs").removeClass("active");
                 }
