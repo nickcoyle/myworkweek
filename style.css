@@ -1,5 +1,42 @@
 h1{
 	color: red;
-}
+	}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif; 
+	}
+.nav-bar{
+	background-color: gray;
+	color: white; 
+	padding: 0;
+	}
+.nav-bar ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: right; 
+	padding: 10px 0px;
+	max-width: 900px;
+	}
+.nav-bar ul li{
+	display: inline;
+	}
+.nav-bar ul li a{
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	}
+.nav-bar ul li a:hover{
+	color: red;
+	cursor: pointer;
+	}   
+.page-container{
+	padding: 0px 15px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto; 
+	}
 
 	
