@@ -26,6 +26,9 @@
                     	$(".tab_content").hide();
                     	$(".tabs").removeClass("active");
                 }
+                else if ($(this).hasClass("active")==true && $(this).hasClass("frontpage-category-container")==true){
+                	//Does nothing when user hits active tab at large size 
+                }
                 else{
 			$(".tabs").removeClass("active");
 			$(this).addClass("active");
