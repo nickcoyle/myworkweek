@@ -38,5 +38,20 @@ body{
 	margin-left: auto;
 	margin-right: auto; 
 	}
+.page-title{
+	text-align: center;
+	}
+.frontpage-category-container{
+	height: 150px;
+	text-align: center;
+	border-width: 2px;
+	border-style: dashed;
+	border-radius: 10px; 
+	padding-top: 10px;
+	margin-bottom: 20px;
+	}
+.frontpage-category-container .fa{
+	font-size: 3em;
+	}	
 
 	
